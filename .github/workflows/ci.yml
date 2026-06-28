@@ -32,6 +32,8 @@ jobs:
 
       - name: Test avec Docker Compose
         run: |
+          docker pull ${{ secrets.DOCKERHUB_USERNAME }}/backend:latest
+          docker pull ${{ secrets.DOCKERHUB_USERNAME }}/frontend:latest
           docker compose up -d
           sleep 30
           docker compose ps
