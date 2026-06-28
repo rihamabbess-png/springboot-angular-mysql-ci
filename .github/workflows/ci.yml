@@ -32,6 +32,6 @@ jobs:
 
       - name: Test avec Docker Compose
         run: |
-          docker-compose up -d
+          docker compose up -d
           sleep 30
-          docker-compose ps
+          docker compose ps
