@@ -13,7 +13,7 @@ services:
       - app-network
 
   backend:
-    image: rihamabbess-png/backend:latest
+    image: rihamabbes/backend:latest
     container_name: spring_backend
     ports:
       - "8080:8080"
@@ -27,7 +27,7 @@ services:
       - app-network
 
   frontend:
-    image: rihamabbess-png/frontend:latest
+    image: rihamabbes/frontend:latest
     container_name: angular_frontend
     ports:
       - "80:80"
